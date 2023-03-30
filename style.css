@@ -1,48 +1,125 @@
 /* styling for the entire html sheet */
 * {
-  background-color: olivedrab;
+  background-color:  #79a4d2;
   box-sizing: border-box;
-
+  padding: 0;
+  margin: 1em;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-/* body styling */
-body {
-margin: 0;
-padding: 0;
+/* animation */
+@keyframes slideDown {
+
+  from {
+    transform: translateY(-300px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
 }
 
-/* header style */
-header {
-  display: none;
+/* container styling */
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1500px;
+  overflow-x: hidden;
 }
 
-/* suicide prevention paragraph */
-#suicideprevention {
-
-
+@media (min-width: 350px ) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
-/* top nav bar */
+/* header styling */
+.header-1 {
+  background-color:  #79a4d2;
+  background-size: auto;
+  justify-content: center;
+  border-bottom: solid 3px #000000;
+}
+
+h1 {
+  animation: slideDown 0.6s ease-in 1 normal both;
+  transform: translateY(-150px);
+  text-align: center;
+}
+
+/* nav bar styling */
 nav {
-display: flex;
+  display: inline-block;
   align-items: center;
-  justify-content: space-between;
-  background-color: rgb(0, 187, 255);
-}
-
-nav i {
-  display: flex;
-  align-items: center;
-  background-color:rgb(0, 187, 255);
-  padding: 1rem;
+  flex-direction: column;
+  padding: 0.5rem;
   font-size: 2em;
+
 }
 
-/* footer */
-footer {
+
+/* nav > ul {
   display: flex;
-  align-items: end;
-  border: solid 1px black;
-  padding: 2rem 2rem 4rem;
-  margin: 1rem 1rem;
+  align-items: center;
+  flex-direction: column;
+
+} */
+
+
+.navigation {
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 0;
+  list-style-type: none;
+}
+
+nav:hover .navigation{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.5rem;
+  list-style-type: none;
+}
+
+/* .navigation:hover{
+  display: inline-block;
+} */
+
+
+  /* footer styling */
+footer {
+  text-align: center;
+  border-top: solid 3px black;
+  padding-top: 10px;
+  font-size: 21px;
+}
+
+
+/* dop pic styling */
+.dogpic {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+img {
+  display: flex;
+  width: 150%;
+  object-fit: contain;
+
+}
+
+/* leave an affirmation page styling*/
+
+.submittedname {
+
+}
+
+.affirmation1{
+  height: 200px;
+  font-size: 14pt;
 }

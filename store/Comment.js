@@ -1,5 +1,5 @@
 export default {
-  header: "Your Comments | Our Mental Health",
+  header: "Your Comments",
   view: "Comment",
   comments: []
 };
