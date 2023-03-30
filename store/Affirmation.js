@@ -1,4 +1,4 @@
 export default {
-  header: "Leave a Positive Affirmation | Our Mental Health",
+  header: "Leave a Positive Affirmation!",
   view: "Affirmation"
 };

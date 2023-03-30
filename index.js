@@ -22,9 +22,9 @@ function render(state = store.Home) {
 function afterRender(state) {
   console.log("matsinet - sate:", state);
   // add menu toggle to bars icon in nav bar
-  document.querySelector(".fa-bars").addEventListener("click", () => {
-    document.querySelector("nav > ul").classList.toggle("hidden--mobile");
-  });
+  // document.querySelector("nav i").addEventListener("click", () => {
+  //   document.querySelector("nav > ul").classList.toggle("nav li");
+  // });
 
   if (state.view === "Affirmation") {
     document.querySelector("form").addEventListener("submit", event => {

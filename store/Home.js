@@ -1,4 +1,4 @@
 export default {
-  header: "Home | Our Mental Health",
+  header: "Home",
   view: "Home"
 };

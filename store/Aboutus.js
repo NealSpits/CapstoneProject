@@ -1,4 +1,4 @@
 export default {
-  header: "About Us | Our Mental Health",
+  header: "About Us",
   view: "Aboutus"
 };
